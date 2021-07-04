@@ -1,0 +1,12 @@
+# more variation on V plot:
+
+# V-plot_multiplicity.py divide multimapping reads by multiplicity, using -nomulti flag leads to ignorance of multimapping reads.
+
+python V-plot_multiplicity.py /oak/stanford/groups/wjg/cxy/NM/L1324-Bigelowiella_natans_500.2x36mers.NM.a.bam /oak/stanford/groups/wjg/cxy/nucleoATAC_Bigna1_NM_out/Bigna1_NM_500_.occpeaks.bed 0 1 500 500 /oak/stanford/groups/wjg/cxy/nucleoATAC_Bigna1_NM_out/Bigna1.NM.occpeak.multiplicity_divided.Vplot_mat.txt
+
+python V-plot_multiplicity.py /oak/stanford/groups/wjg/cxy/NM/L1324-Bigelowiella_natans_500.2x36mers.NM.a.bam /oak/stanford/groups/wjg/cxy/nucleoATAC_Bigna1_NM_out/Bigna1_NM_500_.occpeaks.bed 0 1 500 500 /oak/stanford/groups/wjg/cxy/nucleoATAC_Bigna1_NM_out/Bigna1.NM.occpeak.unique_only.Vplot_mat.txt -nomulti
+
+# V-plot_multiplicity.py normalize read from each position by the accessibility of this position.
+
+python V-plot_average.py /oak/stanford/groups/wjg/cxy/NM/L1324-Bigelowiella_natans_500.2x36mers.NM.a.bam /oak/stanford/groups/wjg/cxy/nucleoATAC_Bigna1_NM_out/Bigna1_NM_500_.occpeaks.bed 0 1 500 500 /oak/stanford/groups/wjg/cxy/nucleoATAC_Bigna1_NM_out/Bigna1.NM.occpeak.average.Vplot_mat.txt
+
